@@ -29,24 +29,38 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aqv-jB-bLg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1Z-Bm-D4Q">
-                                <frame key="frameInset" minX="142" minY="131" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push Me Also"/>
-                                <connections>
-                                    <action selector="otherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5iD-16-NTi"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsI-Mz-HnG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wXh-Wk-Ug5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lW3-V0-O9l">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Rr3-Fj-xcm"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tgq-Zr-o9J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HEE-fd-ffa"/>
                             <constraint firstItem="MV0-Zu-rrA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="SA1-vx-prE"/>
+                            <constraint firstItem="lW3-V0-O9l" firstAttribute="top" secondItem="dsI-Mz-HnG" secondAttribute="bottom" constant="33" id="XV1-lH-fcu"/>
+                            <constraint firstItem="dsI-Mz-HnG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZHy-AZ-LpB"/>
+                            <constraint firstItem="lW3-V0-O9l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ajr-rf-uzf"/>
+                            <constraint firstItem="dsI-Mz-HnG" firstAttribute="top" secondItem="tgq-Zr-o9J" secondAttribute="bottom" constant="28" id="b8e-ZO-8nk"/>
                             <constraint firstItem="MV0-Zu-rrA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kwl-Zw-EZ4"/>
                             <constraint firstItem="tgq-Zr-o9J" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="qDh-yc-BA2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="dsI-Mz-HnG" id="rwh-OO-gQm"/>
+                        <outlet property="text2" destination="lW3-V0-O9l" id="gY9-CP-yec"/>
                         <outlet property="the_Label" destination="MV0-Zu-rrA" id="d7f-KB-8Ta"/>
                     </connections>
                 </viewController>
