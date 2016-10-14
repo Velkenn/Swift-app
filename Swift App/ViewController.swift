@@ -25,8 +25,15 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: AnyObject) {
         
+        
+        let addition = false
+        
+        if addition {
+        
         the_Label.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
-    
+        } else {
+            the_Label.text = "Answer:\(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     
     
     }
